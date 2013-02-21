@@ -1,0 +1,31 @@
+{
+  "name": "mi",
+  "version": "1.0.0",
+  "description": "The simplest and most obvious way to use multiple inheritance in Javascript that I could think of.",
+  "main": "mi.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Schoonology/mi.git"
+  },
+  "keywords": [
+    "multiple",
+    "inheritance",
+    "multiple inheritance",
+    "prototype",
+    "prototypes",
+    "class",
+    "classes"
+  ],
+  "author": "Michael Schoonmaker <michael.r.schoonmaker@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "~1.5.0",
+    "mocha": "~1.8.1"
+  }
+}
