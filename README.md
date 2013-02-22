@@ -35,12 +35,14 @@ aren't inherited as `SubClass.doIt` with `util`, but they are with `mi`.
  prototypical inheritance _will not occur_. Instead, the prototype of the "subclass" will have all prototype methods of
  the "superclass" _injected_ into itself.
 
-## Notes
+## Other Considerations
 
  * You still have to call `Constructor.call(this)` in the "subclass" contructor, just as you would normally.
  * You still have to call `Constructor.prototype.doIt.call(this, ...)` in the "subclass"'s `doIt` method, just as you
  would normally.
  * Notice a pattern?
+ * The order of `mi.extend` matters. Prototypes that are mixed in later (perhaps obviously) take precedence (read:
+ overwrite) those mixed in earlier.
 
 ## License
 
